@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+	<title>page</title>
+	<link rel="stylesheet" href="public.css">
+	<link rel="stylesheet" href="swiper-3.4.2.min.css">
+	<script>
+		if(!(/AppleWebKit.*Mobile/i.test(navigator.userAgent)) || !(/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){ 
+		    if(window.location.href.indexOf("?mobile")<0){ 		      
+		            if(/Firefox|Chrome|Trident|MSIE|Opera/i.test(navigator.userAgent)){ 
+		                window.location.href="index.html" ;	               
+		            } 		       
+		    } 
+		} 
+		(function(doc, win) {
+		    var docEl = doc.documentElement,
+		        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		        recalc = function() {
+		            var clientWidth = docEl.clientWidth;
+		            if (!clientWidth) return;
+		            docEl.style.fontSize = 20 * (clientWidth / 375) + 'px';
+		        };
+		    if (!doc.addEventListener) return;
+		    win.addEventListener(resizeEvt, recalc, false);
+		    doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+	<style>
+		.head1{background:url('webImg/bannerBg.png');height:14.55rem;background-size: cover;}
+		.head1 .headTop{display:flex;flex-direction:row;height:2.5rem;padding:0.65rem 0.75rem 0.6rem;;position:relative;}
+		.head1 .headTop .logo1{background:url('webImg/logo1.png');width:2.3rem;height:1.25rem;background-size: cover;}
+		.head1 .headTop .menu{background:url('webImg/menu.png');background-size: cover;width:1.275rem;height:0.875rem;margin-left: 13.5rem;margin-top: 0.2rem;}
+		.head1 .headTop .menuList{position:absolute;left:-87%;top:0.5rem;background-color:#efefef;width:87%;text-align: center;}
+		.head1 .headTop .menuList ul li{height:2.3rem;border-bottom: 0.05rem solid #aaa ;line-height: 2.3rem}
+		.head1 .headTop .menuList ul li a{color:#000;}
+		.pup{padding:1.8rem 0.75rem 0px;}
+		.pup .pups{padding-left:0.425rem;}
+		.pup .pups .img1{width:87%;}
+		.pup .pups .img2{width:47%;}
+		.pup .nav1{margin-top:6rem;}
+		.pup .nav1 li{width:100%;height:3.375rem;text-align: center;font-size: 0.65rem;font-weight: bold;background-color: #fff;color:#000;line-height: 3.375rem;margin-bottom:0.3rem; -moz-box-shadow: 0px 3px 4px #ddd;-webkit-box-shadow: 0px 3px 4px #ddd;box-shadow: 0px 3px 4px #ddd;}
+		.pup .nav1 li i{display:inline-block;background:url('webImg/blackCar.png');background-size: cover;width:1.05rem;height:0.75rem;    position: relative; top: 0.1rem;left: -0.3rem;}
+		.bodyContent{color:#000;padding:11.425rem 0.75rem 2.25rem;font-size: 0.575rem;}
+		.bodyContent .li1{font-size: 0.8rem;font-weight: bold;padding-bottom:0.375rem;}
+		.swiper-slide img{width: 100%}
+		.bodyContent .li2{line-height: 1.0rem;color:#4a4a4a;}
+		.footer{background:url('webImg/footBg.png');background-size: cover;height:12.8rem;}
+		.footer ul li{height:2.5rem;border-bottom:0.05rem solid #ddd;line-height: 2.5rem;text-align: center}
+		.footer ul li:last-child{border-bottom:0px;}
+	</style>
+</head>
+<body >
+	<div class="wid100 head1">
+		<div class="headTop">
+			<a href="" class="logo1"></a>
+			<span class="menu"  data-ripple="ripple"></span>
+			<div class="menuList">
+				<ul>
+					<li  data-ripple="ripple"><a href="">HOME</a></li>
+					<li  data-ripple="ripple"><a href="">NEWS</a></li>
+					<li  data-ripple="ripple"><a href="">PRODUCT</a></li>
+					<li  data-ripple="ripple"><a href="">INTRODUCTION</a></li>
+					<li  data-ripple="ripple"><a href="">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="pup">
+			<div class="pups"><img src="webImg/head1.png" alt="" class="img1"></div>
+			<div class="pups"><img src="webImg/head2.png" class="img2" alt=""></div>
+			<ul class="nav1">
+				<li  data-ripple="ripple">TPH</li>
+				<li  data-ripple="ripple">INTERIOR PROTECTION</li>
+				<li  data-ripple="ripple">WINDSHIELD PROTECTION</li>
+			</ul>
+		</div>
+	</div>
+	<div class="wid100 bodyContent">
+		<ul>
+			<li class="li1">INTEGO SELECTION-PROTECT YOUR</li>
+			<li class="li1">AUTOMOTIVE BETTER</li>
+			<li class="li2">NTEGO is a worldwide brand which is devote oneself to researching, manufacturing film of automotive painting, interior and windshield in the U.S.A.</li>
+			<li class="li2">Our company manufactures the high quality and low pollution film to satify the diversification automotive onwer worldwide.</li>
+			<li style="margin-top:0.75rem"><img src="webImg/bigCar.png" alt="" width="100%"></li>
+			<li>
+				<div class="swiper-container" style="width:100%">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"><img src="webImg/pic1.png" alt=""></div>
+				        <div class="swiper-slide"><img src="webImg/pic2.png" alt=""></div>
+				        <div class="swiper-slide"><img src="webImg/pic3.png" alt=""></div>
+				        <div class="swiper-slide"><img src="webImg/pic4.png" alt=""></div>
+				    </div>
+				    <!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+				    
+				    <!-- 如果需要导航按钮 -->
+				    <div class="swiper-button-prev"></div>
+				    <div class="swiper-button-next"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="wid100 footer">
+		<ul>
+			<li  data-ripple="ripple"><a href="">HOME</a></li>
+			<li  data-ripple="ripple"><a href="">NEWS</a></li>
+			<li  data-ripple="ripple"><a href="">PRODUCT</a></li>
+			<li  data-ripple="ripple"><a href="">INTRODUCTION</a></li>
+			<li  data-ripple="ripple"><a href="">CONTACT</a></li>
+		</ul>
+	</div>
+</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script src="js/zepto.fx.js"></script>
+<script src="js/ripple.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script>
+	// 头部菜单
+	var i=1;
+	$('.menu').click(function(){
+		i++;
+		if(i % 2 == 0){
+    		$('.menuList').animate({left:'0px'},'1500', 'ease-out')
+    	}else{
+    		$('.menuList').animate({left:'-87%'},'1500', 'ease-out')
+    	}   	
+	})
+	//nav导航
+	$('.nav1 li').click(function(){
+		$(this).css('backgroundColor','#f5cd4e').siblings().css('backgroundColor','#fff')
+	})
+	new Ripple({
+		opacity : 0.6,  //水波纹透明度
+		speed : 1,      //水波纹扩散速度
+		bgColor : "#ffffff", //水波纹颜色
+		cursor : false  //是否显示手型指针
+	});
+	// swiper
+
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'flip',
+      grabCursor: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      pagination:'.swiper-pagination',
+      paginationType : 'fraction',
+    });
+   
+  
+</script>

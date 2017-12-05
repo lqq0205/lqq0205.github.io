@@ -5,9 +5,10 @@
 	<title>intego</title>
 	<meta name="description" content="您的爱车保护专家">
 	<meta name="keywords" content="intego,car,auto film">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
 	<link rel="stylesheet" href="animate.css">
 	<link rel="shortcut icon" href="picc.ico" type="image/x-icon">
-	<script src="jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
 	<link rel="stylesheet" href="public.css">
 </head>
 <body>
@@ -78,7 +79,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="wid100" style="margin-top:100px;background-color: #000;height:130px">
+	<div class="wid100" style="margin-top:100px;background:url(img/footBg.png);height:130px;background-size: cover">
 		<div class="layout">
 			<ul class="footNav">
 				<li><a href="">HOME</a></li>
@@ -97,5 +98,21 @@
 			// $(this).css()
 			$(this).addClass('swing').siblings().removeClass('swing')
 		})
+		//判断是手机还是浏览器进入页面
+		if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){ 
+			// alert(1)
+		    if(window.location.href.indexOf("?mobile")<0){ 
+		        try{ 
+		            if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){ 
+		                window.location.href="web.html"; 
+		            }else if(/iPad/i.test(navigator.userAgent)){ 
+
+		            }else if(/Firefox|Chrome|Trident|MSIE|/i.test(navigator.userAgent)){ 
+		                window.location.href="www.baidu.com" ;
+
+		            } 
+		        }catch(e){} 
+		    } 
+		} 
 	})
 </script>
