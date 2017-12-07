@@ -81,12 +81,12 @@ p{line-height:22px;}
 }
 .item{ position: relative; overflow: hidden;display: inline-block;font-size: 16px;font-size: 1rem;vertical-align: top;
     box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box}
-.footNav {padding-left:13px;}
-.footNav  li{float:left;line-height: 130px}
+.footNav {padding-left:13px;border-bottom:1px solid #626262;font-size: 18px}
+.footNav  li{float:left;line-height: 110px}
 .footNav  li:nth-of-type(1){margin-right:212px;}
 .footNav  li:nth-of-type(2){margin-right:192px;}
 .footNav  li:nth-of-type(3){margin-right:142px;}
 .footNav  li:nth-of-type(4){margin-right:142px;}
-.footNav li a:hover{color:#f5cd4e;}
-
+.footNav  li a:hover{color:#f5cd4e;}
+.cop{text-align:center;line-height: 74px;font-size: 16px;letter-spacing: 2px}
 /*手机样式*/
