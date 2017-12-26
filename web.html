@@ -6,14 +6,16 @@
 	<title>page</title>
 	<link rel="stylesheet" href="public.css">
 	<link rel="stylesheet" href="swiper-3.4.2.min.css">
+	<script src="js/zepto.min.js"></script>
 	<script>
-		if(!(/AppleWebKit.*Mobile/i.test(navigator.userAgent)) || !(/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){ 
-		    if(window.location.href.indexOf("?mobile")<0){ 		      
-		            if(/Firefox|Chrome|Trident|MSIE|Opera/i.test(navigator.userAgent)){ 
-		                window.location.href="index.html" ;	               
-		            } 		       
-		    } 
-		} 
+		//判断是手机还是浏览器进入页面
+		try{
+		    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		       	console.log(1)
+		    }else{
+		        window.location.href="index.html";
+		    }
+		}catch(e){}
 		(function(doc, win) {
 		    var docEl = doc.documentElement,
 		        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
@@ -113,7 +115,6 @@
 	</div>
 </body>
 </html>
-<script src="js/zepto.min.js"></script>
 <script src="js/zepto.fx.js"></script>
 <script src="js/ripple.min.js"></script>
 <script src="js/swiper-3.4.2.min.js"></script>

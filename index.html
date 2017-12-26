@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -10,6 +10,14 @@
 	<link rel="shortcut icon" href="picc.ico" type="image/x-icon">
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<link rel="stylesheet" href="public.css">
+	<script>
+		//判断是手机还是浏览器进入页面
+		try{
+		    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		        window.location.href="web.html";
+		    }
+		}catch(e){}	
+	</script>
 </head>
 <body>
 	<div class="wid100 head">
@@ -67,7 +75,7 @@
 					</li>
 					<li>
 						<div class="item">
-							<div class="div1">PLYING-UP</div>
+							<div class="div1">WRAP</div>
 						</div>	
 					</li>
 					<li>
@@ -99,21 +107,5 @@
 			// $(this).css()
 			$(this).addClass('swing').siblings().removeClass('swing')
 		})
-		//判断是手机还是浏览器进入页面
-		if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){ 
-			// alert(1)
-		    if(window.location.href.indexOf("?mobile")<0){ 
-		        try{ 
-		            if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){ 
-		                window.location.href="web.html"; 
-		            }else if(/iPad/i.test(navigator.userAgent)){ 
-
-		            }else if(/Firefox|Chrome|Trident|MSIE|/i.test(navigator.userAgent)){ 
-		                window.location.href="www.baidu.com" ;
-
-		            } 
-		        }catch(e){} 
-		    } 
-		} 
 	})
 </script>
