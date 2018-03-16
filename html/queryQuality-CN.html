@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -14,7 +14,7 @@
 			<div class="nav">
 				<a href="" class="logo"></a>
 				<ul class="headList">
-					<li><a href="../index-CN.html">首页</a></li>
+					<li><a href="../index.html">首页</a></li>
 					<li><a href="news-CN.html">新闻资讯</a></li>
 					<li><a href="product-CN.html">产品信息</a></li>
 					<li>
@@ -173,6 +173,7 @@
 					$('#infoGP').text(newMsg.GP+"年");$('#infoSalePart').text(newMsg.SalePart);
 					$('#infoSaleTime').text(newMsg.SaleTime.substring(0, newMsg.SaleTime.indexOf('T')));$('#infoStoreName').text(newMsg.StoreName);
 					var imgs = newMsg.Imgs.split(';');
+					console.log(imgs)
 					// console.log(newMsg.Imgs.split(';'))
 					for(var i=0;i<4;i++){
 						carImg +="<img src="+imgs[i]+"  width='48%' height='50%'>"
