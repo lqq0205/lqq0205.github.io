@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>产品</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/product.css">
+	<link rel="shortcut icon" href="../picc.ico" type="image/x-icon">
+	<script src="../js/jquery-1.10.2.min.js"></script>	
+</head>
+<body>
+	<div class="wid100 proHead">
+		<div class="layout">
+			<div class="nav">
+				<a href="" class="logo"></a>
+				<ul class="headList">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="news.html">NEWS</a></li>
+					<li><a href="product.html">PRODUCT</a></li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">ABOUT US</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="about.html">ABOUT US</a>
+							<a href="contactUs.html">CONTACT US</a>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">SERVICE</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="queryQuality.html">质保查询</a>
+							<a href="oper.html">经销商查询</a>
+						</div>							
+					</li>
+				</ul>	
+			</div>
+			<div class="bounceInDown animated n1 mr" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:0.5s;-webkit-animation-delay:0.5s;margin-left:413px">INTEGO PRODUCT</div>
+			<div class="line"></div>
+			<div class="bounceInLeft animated n2" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:1s;-webkit-animation-delay:1s;">PROTECT PAINTING BETTER</div>
+		</div>
+	</div>
+	<div class="wid100 center">
+		<div class="layout">
+			<h2>INTEGO PRODUCT</h2>
+			<div class="cenLine"></div>
+			<div class="demo clear">
+				<img src="../img/c1.png" class="fl" alt="">
+				<ul class="fl">
+					<li>INTEGO&ensp;汽车漆面保护膜TPH材质</li>
+					<li>INTEGO TPH汽车漆面保护膜,采用高分子材料以及高光涂层技术及生产工艺与表面涂层配方,保证产品卓越的透明光亮性能和安全保护功效,给爱车最好呵护。</li>
+					<li class="exo"><i></i>采用高分子材料及高光涂层技术,增亮漆面30%</li>
+					<li class="exo"><i></i>采用目前世界上最高等级为5级的耐黄变基材</li>
+					<li class="exo"><i></i>能有效隔绝鸟粪、虫尸、酸雨、水泥等有害物对漆面的损坏</li>
+					<li class="exo"><i></i>使用的高分子材料及生产工艺与表面涂层配方</li>
+					<li class="exo"><i></i>自修复技术能有效抵御刮擦和轻微划痕</li>
+					<li class="exo"><i></i>采用可重复拆帖的高清智能胶层，确保拆除无残胶</li>
+					<li class="exo"><i></i>汽车漆面保护膜3年质保，给爱车更好呵护</li>
+				</ul>
+			</div>
+			<div class="demo2 clear">
+				<div class="fl d2Contain">
+					<div class="case">CASE</div>
+					<img src="../img/c2.png" alt="case" style="display:block;margin-bottom:24px">
+					<img src="../img/c3.png" alt="case" style="margin-right:28px">
+					<img src="../img/c4.png" alt="case">
+				</div>	
+				<img src="../img/c5.png" class="fl" alt="case">
+			</div>
+		</div>
+	</div>
+	<div class="wid100" style="margin-top:100px;background:url(../img/footBg.png);height:184px;background-size: cover">
+		<div class="layout ft"></div>
+	</div>
+</body>
+</html>
+<script>
+	$(function(){
+		$('.headList li').hover(function(){
+			$(this) .children('.childList').stop(true, true).fadeIn(200);
+		},function(){
+			$(this) .children('.childList').fadeOut(500, function () {
+            	$(this).css("display", "none");
+        	});
+		})
+		$('.ft').load('../js/foot.js')
+	})
+</script>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>经销商查询</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/oper.css">
+	<link rel="shortcut icon" href="../picc.ico" type="image/x-icon">
+	<script src="../js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+	<div class="wid100 quanlityHead">
+		<div class="layout">
+			<div class="nav">
+				<a href="" class="logo"></a>
+				<ul class="headList">
+					<li><a href="../index-CN.html">首页</a></li>
+					<li><a href="news-CN.html">新闻资讯</a></li>
+					<li><a href="product-CN.html">产品信息</a></li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">公司介绍</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="about-CN.html">关于我们</a>
+							<a href="contactUs-CN.html">联系我们</a>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">服务中心</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="queryQuality-CN.html">质保查询</a>
+							<a href="oper-CN.html">经销商查询</a>
+						</div>							
+					</li>
+				</ul>	
+			</div>
+			<div class="bounceInDown animated n1" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:0.5s;-webkit-animation-delay:0.5s;margin-left:420px;letter-spacing: 10px">经销商查询</div>
+			<div class="line"></div>
+			<div class="bounceInLeft animated n2" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:1s;-webkit-animation-delay:1s;">PROTECT PAINTING BETTER</div>
+		</div>
+	</div>
+	<div class="wid100 center operBox">
+		<div class="layout">
+			<h2>经销商查询</h2>
+			<div class="cenLine"></div>
+			<div class="operContainer">
+				<div class="selectBox clear">
+					<div class="el-select" id="sb1">
+						<select name="" id=""></select>
+					</div>
+					<div class="el-select" id="sb2">
+						<select name="" id=""><option value="">请选择</option></select>
+					</div>
+					<div class="el-select" id="sb3">
+						<select name="" id=""></select>
+					</div>
+					<div class="el-select" id="sb4">
+						<select name="" id=""></select>
+					</div>
+				</div>
+				<button class="btn" id="addMarker">点击查询</button>
+				<input type="hidden" class="country" >					
+				<input type="hidden" class="province" >
+				<input type="hidden" class="city">
+				<input type="hidden" class="area" >		
+			</div>
+			<div class="mapContainer clear">
+				<div class="fl" style="width: 800px; height: 528px;" id="js-container" class="map"></div>
+				<div class="fr mapDetail">
+					
+				</div>							
+			</div>
+		</div>
+	</div>
+	<div class="wid100" style="margin-top:100px;background:url(../img/footBg.png);height:184px;background-size: cover">
+		<div class="layout ft"></div>
+	</div>
+</body>
+</html>
+<script src="http://webapi.amap.com/maps?v=1.4.1&key=bb9d9146a5e2a4a897f99506e3283a9c&plugin=AMap.Geocoder"></script>
+<script src="http://webapi.amap.com/ui/1.0/main.js"></script>
+<script src="../js/oper.js"></script>
+<script>
+	$('.headList li').hover(function(){
+		$(this) .children('.childList').stop(true, true).fadeIn(200);
+	},function(){
+		$(this) .children('.childList').fadeOut(500, function () {
+        	$(this).css("display", "none");
+    	});
+	})
+	$('.ft').load('../js/foot-CN.js')
+</script>

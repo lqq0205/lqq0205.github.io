@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新闻</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/news.css">
+	<link rel="shortcut icon" href="../picc.ico" type="image/x-icon">
+	<script src="../js/jquery-1.10.2.min.js"></script>	
+</head>
+<body>
+	<div class="wid100 newsHead">
+		<div class="layout">
+			<div class="nav">
+				<a href="" class="logo"></a>
+				<ul class="headList">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="news.html">NEWS</a></li>
+					<li><a href="product.html">PRODUCT</a></li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">ABOUT US</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="about.html">ABOUT US</a>
+							<a href="contactUs.html">CONTACT US</a>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">SERVICE</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="queryQuality.html">质保查询</a>
+							<a href="oper.html">经销商查询</a>
+						</div>							
+					</li>
+				</ul>	
+			</div>
+			<div class="bounceInDown animated n1" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:0.5s;-webkit-animation-delay:0.5s;margin-left:413px">INTEGO NEWS</div>
+			<div class="line"></div>
+			<div class="bounceInLeft animated n2" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:1s;-webkit-animation-delay:1s;">PROTECT PAINTING BETTER</div>
+		</div>
+	</div>
+	<div class="wid100 center">
+		<div class="layout">
+			<h2>INTEGO NEWS</h2>
+			<div class="cenLine"></div>
+			<div class="newsList">
+				<div class="news clear">
+					<img src="../img/newsDemo.png" class="fl" alt="">
+					<div class="cRight fl">
+						<div class="newTitle">北京举办贴膜大赛</div>
+						<div class="time"><i></i><em>2019-10-10</em></div>
+						<div class="explan">中国汽车电子技术展览会将汇聚业界影响力卓越的展商，包括车身电子展区、自动驾驶展区、智能网联技术展区、新能源汽车技术展区，中国汽车电子技术展览会将汇聚业界影响力卓越的展商，包括车身电子展区、自动驾驶展区、智能网联技术展区、新能源汽车技术展区</div>
+					</div>
+				</div>
+				<div class="news clear">
+					<img src="../img/newsDemo.png" class="fl" alt="">
+					<div class="cRight fl">
+						<div class="newTitle">北京举办贴膜大赛</div>
+						<div class="time"><i></i><em>2019-10-10</em></div>
+						<div class="explan">中国汽车电子技术展览会将汇聚业界影响力卓越的展商，包括车身电子展区、自动驾驶展区、智能网联技术展区、新能源汽车技术展区，中国汽车电子技术展览会将汇聚业界影响力卓越的展商，包括车身电子展区、自动驾驶展区、智能网联技术展区、新能源汽车技术展区</div>
+					</div>
+				</div>
+				<div class="news clear">
+					<img src="../img/newsDemo.png" class="fl" alt="">
+					<div class="cRight fl">
+						<div class="newTitle">北京举办贴膜大赛</div>
+						<div class="time"><i></i><em>2019-10-10</em></div>
+						<div class="explan">中国汽车电子技术展览会将汇聚业界影响力卓越的展商，包括车身电子展区、自动驾驶展区、智能网联技术展区、新能源汽车技术展区，中国汽车电子技术展览会将汇聚业界影响力卓越的展商，包括车身电子展区、自动驾驶展区、智能网联技术展区、新能源汽车技术展区</div>
+					</div>
+				</div>
+				<div class="news clear">
+					<img src="../img/newsDemo.png" class="fl" alt="">
+					<div class="cRight fl">
+						<div class="newTitle">北京举办贴膜大赛</div>
+						<div class="time"><i></i><em>2019-10-10</em></div>
+						<div class="explan">中国汽车电子技术展览会将汇聚业界影响力卓越的展商，包括车身电子展区、自动驾驶展区、智能网联技术展区、新能源汽车技术展区，中国汽车电子技术展览会将汇聚业界影响力卓越的展商，包括车身电子展区、自动驾驶展区、智能网联技术展区、新能源汽车技术展区</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="wid100" style="margin-top:100px;background:url(../img/footBg.png);height:184px;background-size: cover">
+		<div class="layout ft"></div>
+	</div>
+</body>
+</html>
+<script>
+	$(function(){
+		$('.headList li').hover(function(){
+			$(this) .children('.childList').stop(true, true).fadeIn(200);
+		},function(){
+			$(this) .children('.childList').fadeOut(500, function () {
+            	$(this).css("display", "none");
+        	});
+		})
+		$('.ft').load('../js/foot.js')
+	})
+</script>

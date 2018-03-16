@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-weight: normal;
+    font-family: "Microsoft Yahei";
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:hover{
+        outline: none;
+    }
+}
+body{ font-size:16px; font-style:normal;}
+a{ text-decoration:none;color:#fff;}
+a,a:hover{cursor:hand;cursor:pointer;transition:background 0.5s linear;-webkit-transition:background 0.5s linear;-moz-transition:background 0.5s linear;-o-transition:background 0.5s linear;}
+em, i{font-style: normal;}
+ul, ol, li{list-style: none;}
+img{ border:none;vertical-align:middle;}
+input,select,textarea{outline:none;border:none;background:none;}
+textarea{resize:none;}
+p{line-height:22px;}
+.fl{float: left;}
+.fr{float: right;}
+.clear:after{display: block;clear: both;content: "";visibility: hidden; height: 0;}
+ @font-face {font-family: 'SF';src: url('../font/PingFang Medium_downcc.otf');}  
+/*公共样式*/
+.layout{width:1200px; margin:0 auto;display:table}
+.layout1{width:1393px; margin:0 auto;display:table}
+.wid100{width:100%;}
+.black{color:#000;}
+.mr{margin-left:413px}
+/*newsHead*/
+.newsHead{background:url(../img/newsBanner.png) no-repeat center center;height:700px;}
+.n1{font-size:60px;font-weight:bold;margin:236px 0px 0px 480px;color:#fff; }
+.n2{margin-left:412px;font-size: 20px;color:#fff;}
+.line{margin-left:412px;width:356px;height:1px;background-color: #fff;margin-top:10px;margin-bottom:20px;}
+.center{padding:76px 0px 0px;}
+.center h2{font-size:40px;font-weight:bold;}
+.center .cenLine{background:url(../img/newsLine.png) no-repeat center center;height:3px;width:71px;margin-top:18px;margin-bottom: 47px}
+
+/*productHead*/
+.proHead{background:url(../img/proBanner.png) no-repeat center center;height:700px;}
+/*contactHead*/
+.contactHead{background:url(../img/contactBanner.png) no-repeat center center;height:700px;}
+/*aboutHead*/
+.aboutHead{background:url(../img/contactBanner.png) no-repeat center center;height:700px;}
+/*quanlityHead*/
+.quanlityHead{background:url(../img/quanlityBanner.png) no-repeat center center;height:700px;}
+
+/*head*/
+.head{background:url(../img/headBanner.jpg) no-repeat center center;height:964px;}
+.nav{position:relative;width:100%;}
+.logo{display:block;width:110px;height:60px;position:absolute;left:545px;top:40px;background:url(../img/logo.png);}
+.headList{padding:64px 0px 0px 147px;}
+.headList li{float:left;color:#fff;}
+.headList li:nth-of-type(1){margin-right:78px;}
+.headList li:nth-of-type(2){margin-right:70px;}
+.headList li:nth-of-type(3){margin-right:272px;}
+.headList li:nth-of-type(4){margin-right:93px;position:relative;}
+.headList li:nth-of-type(5){margin-right:80px;position:relative;height:130px;}
+.headList li .en{margin-right:3px;}
+.headList li .cn{margin-left:3px;}
+.headList li .childList{position:absolute;left:0px;top:30px;background-color: #fff;width:164px;height:82px;display:none;z-index: 99}
+.headList li .childList a{color:#666;font-size: 14px;display:block;line-height: 40px;padding-left:18px;}
+.headList li a{font-family: 'SF';}
+.headList li a:hover{color:#f5cd4e;}
+.headList li .ab{display:block;height:32px;}
+
+.headList li .icon{display:inline-block;background:url(../img/iconSan.png);width:14px;height:8px;margin:7px;}
+.head .t1{margin-top:204px;margin-left:26px;padding-bottom:48px;}
+.head .t1 img{width:1034px;height:47px;}
+.head .t2{margin-left:26px;}
+.head .choseSelect{margin-top:525px;}
+.head .choseSelect li{cursor:pointer;cursor:hand;font-size: 20px;color:#000;font-weight: bold;text-align: center;float:left;background:#fff;width:396px;height:150px;line-height:150px;margin-right:6px; -moz-box-shadow: 0px 3px 4px #000;-webkit-box-shadow: 0px 3px 4px #000;box-shadow: 0px 3px 4px #000;}
+.head .choseSelect li:last-child{margin-right:0px;}
+.head .choseSelect li:hover{background-color:#f5cd4e;}
+.head .choseSelect li i{display:inline-block;background:url(../img/car2.png);width:38px;height:26px;margin-right:22px;}
+.main{padding:236px 0px 98px;}
+.main .mainTop{position:relative;}
+.main .mainTop ul li{color:#000;font-size:22px;}
+.main .mainTop ul .li1{font-family: Arial;font-size: 46px;font-weight: bold}
+.main .mainTop ul .li2{width:626px;line-height: 40px;font-size: 20px}
+.main .mainTop .carImg{position: absolute;right: -64px;top: 50px;}
+.main .mainTop .vertical{background:url(../img/ver.png) no-repeat center center;width:12px;height:218px;position:absolute;left:-236px;top:0px;}
+.main1 .mainBottom {margin-top:160px;}
+.main1 .mainBottom ul li{float:left;width:348px;height:602px;font-size: 26px;padding-left:20px;cursor:pointer;cursor:hand;color:#fff;}
+.main1 .mainBottom ul li .div1{width:348px;height:602px;-webkit-transition: all .5s ease; /* Safari and Chrome */
+    -moz-transition: all .5s ease; /* Firefox */
+    -ms-transition: all .5s ease; /* IE 9 */
+    -o-transition: all .5s ease; /* Opera */
+    transition: all .5s ease;
+        padding-top: 425px;padding-left:40px;
+}
+.main1 .mainBottom ul li:first-child .div1{background:url(../img/pic1.jpg);}
+.main1 .mainBottom ul li:nth-of-type(2) .div1{background:url(../img/pic2.jpg);}
+.main1 .mainBottom ul li:nth-of-type(3) .div1{background:url(../img/pic3.jpg);}
+.main1 .mainBottom ul li:nth-of-type(4) .div1{background:url(../img/pic4.jpg);}
+.main1 .mainBottom ul li .div1:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+        -moz-transform:scale(1.25); /* Firefox */
+        -ms-transform:scale(1.25); /* IE 9 */
+        -o-transform:scale(1.25); /* Opera */
+         transform:scale(1.25);
+}
+.item{ position: relative; overflow: hidden;display: inline-block;font-size: 16px;font-size: 1rem;vertical-align: top;
+    box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box}
+.footNav {padding-left:13px;border-bottom:1px solid #626262;font-size: 18px;color:#fff;}
+.footNav  li{float:left;line-height: 110px;}
+.footNav  li:nth-of-type(6){margin-right:0px;}
+.footNav  li:nth-of-type(1){margin-right:214px;}
+.footNav  li:nth-of-type(2){margin-right:192px;}
+.footNav  li:nth-of-type(3){margin-right:170px;}
+.footNav  li:nth-of-type(4){margin-right:180px;}
+.footNav  li a:hover{color:#f5cd4e;}
+.cop{text-align:center;line-height: 74px;font-size: 16px;letter-spacing: 2px;color:#fff;}
+/*手机样式*/

@@ -1,0 +1,14 @@
+.center .newsList .news{margin-bottom: 97px}
+.center .newsList .news:nth-last-of-type(1){margin-bottom: 0px}
+.center .newsList img{width:366px;height:274px;}
+.center .newsList .cRight{width:780px;margin-left:52px;}
+.center .newsList .cRight .newTitle{color:#f5cd4e;font-size:24px;font-weight:bolder;margin-bottom:25px;}
+.center .newsList .cRight .time{color:#d5d5d5;font-size:20px;margin-bottom:25px;}
+.center .newsList .cRight .time i{display:inline-block;background:url(../img/newsCalendar.png) no-repeat center center;width:22px;height:20px;}
+.center .newsList .cRight .time em{position:relative;bottom:2px;left:4px;}
+.center .newsList .cRight .explan{line-height: 30px;color:#797979;font-size: 18px}
+.fly{text-align: center;font-size: 30px;margin:20px 0 30px;}
+.ld{margin:0 auto;width:400px;display:none;}
+.down{background: url('../img/downArrow.png');width:32px;height:16px;margin:0 auto;}
+.loading{display:inline-block;background: url('../img/loading1.gif');width:54px;height:54px;background-size: cover;margin:0 auto;}
+.word{font-size: 26px;color:#666;    position: relative; bottom: 15px;}

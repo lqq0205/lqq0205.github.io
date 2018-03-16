@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于我们</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/about.css">
+	<link rel="shortcut icon" href="../picc.ico" type="image/x-icon">
+	<script src="../js/jquery-1.10.2.min.js"></script>	
+</head>
+<body>
+	<div class="wid100 aboutHead">
+		<div class="layout">
+			<div class="nav">
+				<a href="" class="logo"></a>
+				<ul class="headList">
+					<li><a href="../index-CN.html">首页</a></li>
+					<li><a href="news-CN.html">新闻资讯</a></li>
+					<li><a href="product-CN.html">产品信息</a></li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">公司介绍</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="about-CN.html">关于我们</a>
+							<a href="contactUs-CN.html">联系我们</a>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">服务中心</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="queryQuality-CN.html">质保查询</a>
+							<a href="oper-CN.html">经销商查询</a>
+						</div>							
+					</li>
+				</ul>	
+			</div>
+			<div class="bounceInDown animated n1" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:0.5s;-webkit-animation-delay:0.5s;margin-left:412px">关于INTEGO</div>
+			<div class="line"></div>
+			<div class="bounceInLeft animated n2" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:1s;-webkit-animation-delay:1s;">PROTECT PAINTING BETTER</div>
+		</div>
+	</div>
+	<div class="wid100 center">
+		<div class="layout">
+			<h2>INTEGO TEAM</h2>
+			<div class="cenLine"></div>
+			<div class="team">
+				<ul class="fl">
+					<li>团队介绍/ Team Presentation</li>
+					<li>INTEGO品牌以高性价比漆面膜为主打，专注于汽车漆面、内饰保护。是集研发、生产、销售于一起的汽车膜类企业。INTEGO秉承品质至上的原则，致力于开发“绿色”、“实用”的汽车漆面保护类产品，以此来满足日益多元化的全球汽车车主需求。</li>
+					<li>INTEGO TPH 汽车漆面保护膜，采用高分子材料及高光涂层技术及生产工艺与表面涂层配方，保证产品卓越的透明光亮性能和安全保护功效，给爱车最好的呵护。</li>
+				</ul>
+				<img src="../img/team.png" class="fl" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="wid100 history">
+		<div class="layout">
+			<div class="step">我们的步伐 / Brand history</div>
+			<div class="score"></div>
+			<ul>
+				<li>
+					<div>2017年在上海成立公司</div>
+					<div class="cir"></div>
+				</li>
+
+				<li>
+					<div class="cir"></div>
+					<div>2017年推出INTEGO TPH汽车漆面保护膜</div>
+				</li>
+				 <li>
+					<div>INTEGO TPH稳定性及耐用程度远远超过市场竞争产品</div>
+					<div class="cir"></div>				
+				</li>
+				<li>
+					<div class="cir"></div>
+					<div>2018年，我们在路上...</div>
+				</li> 
+			</ul>
+		</div>
+	</div>
+	<div class="wid100 adv">
+		<div class="layout">
+			<div class="ad">我们的优势 / Our Advantage</div>
+			<ul class="clear">
+				<li>
+					<dl>
+						<dt><img src="../img/about1.png" alt=""></dt>
+						<dd>价格优势</dd>
+						<dd></dd>
+						<dd style="text-align:left">三年镀晶省1万，普洗精洗省2万，时间省一半，三年省出2个月时间成本</dd>
+					</dl>
+				</li>
+
+				<li>
+					<dl>
+						<dt><img src="../img/about2.png" alt=""></dt>
+						<dd>品质优势</dd>
+						<dd></dd>
+						<dd>不发黄，不翘边，不掉胶</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt><img src="../img/about3.png" alt=""></dt>
+						<dd>施工优势</dd>
+						<dd></dd>
+						<dd>SeArt 十余年实战经验</dd>
+					</dl>			
+				</li>
+				<li>
+					<dl>
+						<dt><img src="../img/about4.png" alt=""></dt>
+						<dd>售后优势</dd>
+						<dd></dd>
+						<dd>厂家级质保3年</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="wid100" style="margin-top:100px;background:url(../img/footBg.png);height:184px;background-size: cover">
+		<div class="layout ft"></div>
+	</div>
+</body>
+</html>
+<script>
+	$(function(){
+		$('.headList li').hover(function(){
+			$(this) .children('.childList').stop(true, true).fadeIn(200);
+		},function(){
+			$(this) .children('.childList').fadeOut(500, function () {
+            	$(this).css("display", "none");
+        	});
+		})
+		$('.ft').load('../js/foot-CN.js')
+	})
+</script>

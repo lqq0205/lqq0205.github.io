@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>intego</title>
+	<meta name="description" content="www.integofilm.com">
+	<meta name="keywords" content="intego,car,auto film,www.integofilm.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="shortcut icon" href="../picc.ico" type="image/x-icon">
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<link rel="stylesheet" href="../css/public.css">
+	<script>
+		//判断是手机还是浏览器进入页面
+		try{
+		    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		        window.location.href="web.html";
+		    }
+		}catch(e){}	
+	</script>
+</head>
+<body>
+	<div class="wid100 head">
+		<div class="layout">
+			<div class="nav">
+				<a href="" class="logo"></a>
+				<ul class="headList">
+					<li><a href="../index-CN.html">首页</a></li>
+					<li><a href="news-CN.html">新闻资讯</a></li>
+					<li><a href="product-CN.html">产品信息</a></li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">公司介绍</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="about-CN.html">关于我们</a>
+							<a href="contactUs-CN.html">联系我们</a>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">服务中心</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="queryQuality-CN.html">质保查询</a>
+							<a href="oper-CN.html">经销商查询</a>
+						</div>							
+					</li>
+					<li><a href="" class="en">EN</a>|<a href="" class="cn">CN</a></li>
+				</ul>	
+			</div>
+			<div class="t1 bounceInDown animated" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:0.5s;-webkit-animation-delay:0.5s;"><img src="../img/t1.png" alt="" ></div>
+			<div class="t2 bounceInLeft animated" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:1s;-webkit-animation-delay:1s;"><img src="../img/t2.png" alt=""></div>
+			<div class="choseSelect">
+				<ul>
+					<li class=" animated" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:0.2s;-webkit-animation-delay:0.2s;"><i class="icon"></i>TPH</li>
+					<li class=" animated" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:0.2s;-webkit-animation-delay:0.2s;"><i class="icon" ></i>玻璃盾</li>
+					<li class=" animated" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:0.2s;-webkit-animation-delay:0.2s;"><i class="icon"></i>钢化膜</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="layout">
+			<div class="mainTop">
+				<div style="width:760px">
+					<ul>
+						<li class="li1" style="padding-bottom:30px">INTEGO睿选系列</li>
+						<li class="li1" style="padding-bottom:50px">— 给爱车更好的呵护</li>
+						<li class="li2">INTEGO漆面保护膜是美国Seart.Inc旗下高端漆面膜品牌，总部位于美国加州。 </li>
+						<li class="li2">INTEGO漆面膜保护膜专注于汽车漆面保护领域，综合中国后市场服务的现状与特点，推出丰富的产品类别，制定合理的营销模式，提供专业的技术指导与品牌的推广支持，致力打造线上与线下的结合用于完善品牌服务。</li>
+					</ul>
+				</div>
+				<div class="carImg"><img src="../img/carImg.png" alt=""></div>
+				<div class="vertical"></div>
+			</div>
+		</div>
+	</div>
+	<div class="main1">
+		<div class="layout1">
+			<div class="mainBottom">
+				<ul>
+					<li>
+						<div class="item">
+							<div class="div1">增亮漆面</div>
+						</div>			
+					</li>
+					<li>
+						<div class="item">
+							<div class="div1">呵护车漆面</div>
+						</div>	
+					</li>
+					<li>
+						<div class="item">
+							<div class="div1">强力贴覆</div>
+						</div>	
+					</li>
+					<li>
+						<div class="item">
+							<div class="div1">无胶残留</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="wid100" style="margin-top:100px;background:url(../img/footBg.png);height:184px;background-size: cover">
+		<div class="layout ft"></div>
+	</div>	
+</body>
+</html>	
+<script>
+	$(function(){
+		$('.choseSelect ul li').hover(function(){
+			$(this).addClass('swing').siblings().removeClass('swing')
+		})
+		$('.headList li').hover(function(){
+			$(this) .children('.childList').stop(true, true).fadeIn(200);
+		},function(){
+			$(this) .children('.childList').fadeOut(500, function () {
+            	$(this).css("display", "none");
+        	});
+		})
+		$('.ft').load('../js/foot-CN.js')
+	})
+</script>

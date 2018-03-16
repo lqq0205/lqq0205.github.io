@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>联系我们</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/contact.css">
+	<link rel="shortcut icon" href="../picc.ico" type="image/x-icon">
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.4&key=bb9d9146a5e2a4a897f99506e3283a9c"></script> 	
+</head>
+<body>
+	<div class="wid100 contactHead">
+		<div class="layout">
+			<div class="nav">
+				<a href="" class="logo"></a>
+				<ul class="headList">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="news.html">NEWS</a></li>
+					<li><a href="product.html">PRODUCT</a></li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">ABOUT US</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="about.html">ABOUT US</a>
+							<a href="contactUs.html">CONTACT US</a>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">SERVICE</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="queryQuality.html">质保查询</a>
+							<a href="oper.html">经销商查询</a>
+						</div>							
+					</li>
+				</ul>	
+			</div>
+			<div class="bounceInDown animated n1 mr" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:0.5s;-webkit-animation-delay:0.5s;margin-left:413px">CONTACT US</div>
+			<div class="line"></div>
+			<div class="bounceInLeft animated n2" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:1s;-webkit-animation-delay:1s;">PROTECT PAINTING BETTER</div>
+		</div>
+	</div>
+	<div class="wid100 center">
+		<div class="layout">
+			<h2>CONTACT US</h2>
+			<div class="cenLine"></div>
+			<div class="contain clear">
+				<ul class="fl clear leftUl">
+					<li>Get in Touch</li>
+					<li>Enter your personal information to chat with us. </li>
+					<li>
+						<input placeholder="Your Name*" id="name"/>
+					</li>
+					<li>
+						<input placeholder="E-mail*" id="mail" />
+					</li>
+					<li>
+						<textarea name=""  cols="30" rows="10" placeholder="Message*" id="msg"></textarea>
+					</li>
+					<li class="send">SEND MESSAGE<i></i></li>
+				</ul>
+				<ul class="fl rightUl" style="width:486px;margin-left:124px">
+					<li>Contact information</li>
+					<li>Our service team is available 7 days a week，from 8.00 AM to 9.00 PM</li>
+					<li>Address</li>
+					<li>09-A Vilnius, New alaska, United States.</li>
+					<li>Phone</li>
+					<li>400-821-9001</li>
+					<li>Web</li>
+					<li>INTEGOFILM.com</li>
+				</ul>
+			</div>
+			<!-- 地图 -->
+			<div style="width:1200px;height:382px;margin-top:84px;" id="container">
+				
+			</div>
+		</div>
+	</div>
+	<div class="wid100" style="margin-top:100px;background:url(../img/footBg.png);height:184px;background-size: cover">
+		<div class="layout ft"></div>
+	</div>
+</body>
+</html>
+<script src="../js/contact.js"></script>
+<script>
+	$(function(){
+		$('.headList li').hover(function(){
+			$(this) .children('.childList').stop(true, true).fadeIn(200);
+		},function(){
+			$(this) .children('.childList').fadeOut(500, function () {
+            	$(this).css("display", "none");
+        	});
+		})
+		$('.ft').load('../js/foot.js')
+	})
+</script>

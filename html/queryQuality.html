@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>质保查询</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/quantity.css">
+	<link rel="shortcut icon" href="../picc.ico" type="image/x-icon">
+	<script src="../js/jquery-1.10.2.min.js"></script>	
+</head>
+<body>
+	<div class="wid100 quanlityHead">
+		<div class="layout">
+			<div class="nav">
+				<a href="" class="logo"></a>
+				<ul class="headList">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="news.html">NEWS</a></li>
+					<li><a href="product.html">PRODUCT</a></li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">ABOUT US</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="about.html">ABOUT US</a>
+							<a href="contactUs.html">CONTACT US</a>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">SERVICE</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="queryQuality.html">质保查询</a>
+							<a href="oper.html">经销商查询</a>
+						</div>							
+					</li>
+				</ul>	
+			</div>
+			<div class="bounceInDown animated n1 mr" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:0.5s;-webkit-animation-delay:0.5s;margin-left:413px">WARRANTY QUERY</div>
+			<div class="line"></div>
+			<div class="bounceInLeft animated n2" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:1s;-webkit-animation-delay:1s;">PROTECT PAINTING BETTER</div>
+		</div>
+	</div>
+	<div class="wid100 center">
+		<div class="layout">
+			<h2>WARRANTY QUERY</h2>
+			<div class="cenLine"></div>
+			<div class="tip">
+				<ul>
+					<li>尊敬的客户：感谢您选择美国INTEGO漆面透明保护膜保护您的爱车，INTEGO漆面保护膜以其卓越的产品性能，保持您的爱车漆面光亮如新，最大限度保护您的漆面免受划痕之忧，尊享驾驶新车每一天。</li>
+					<li>INTEGO质保查询</li>
+					<li class="clear">
+						<input type="text" placeholder="请输入牌照号/手机号/车架号/模卷号：" class="fl" id="queryNum">
+						<div class="fl query" id="btn">点击查询</div>
+					</li>
+					<li class="tipp">注意事项：</li>
+					<li  class="tipp">1：由于膜胶层完全粘固需要时间，所以施工完毕后一星期内不可高压水洗车，可用软布湿洗表面。</li>
+					<li  class="tipp">2：由于车身各部位弧度大小各异，弧度大造成膜层粘附力低，边角容易二次起边起泡。请在施工完毕后一周内返回施工店进行复检，确保完美施工质量。</li>
+					<li  class="tipp">3：若作婚车用途，婚车装饰时，禁止使用强力吸盘吸附膜面表层，遇到雨雪天气时，若有鞭炮，礼花弹等物质洒落在车漆表面请立即清除，防止雨水长时间浸泡导致膜面染色。</li>
+				</ul>
+			</div>
+			<!--查询结果 -->
+			<div class="result"  style="display:none">
+				<div class="r1">INTEGO质保查询结果</div>
+				<div class="r2">感谢您选购INTEGO顶级漆面保护膜产品，为您的爱车带来极致的漆面保护体验！</div>
+				<ul>
+					<li>
+						<div class="title">INTEGO车辆信息</div>
+						<table>
+							<tr>
+								<td>车辆品牌：</td>
+								<td id="infoCarBrand"></td>
+								<td>牌照号码：</td>
+								<td id="infoCarNumber"></td>
+							</tr>
+							<tr>
+								<td>车架号码：</td>
+								<td id="infoVIN"></td>
+								<td>车辆颜色：</td>
+								<td  id="infoCarColor"></td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<div class="title">INTEGO产品信息</div>
+						<table>
+							<tr>
+								<td>产品系列：</td>
+								<td  id="infoProductName"></td>
+								<td>质保年限：</td>
+								<td  id="infoGP" ></td>
+							</tr>
+							<tr>
+								<td>卷轴编号：</td>
+								<td  id="infoProductNumber"></td>
+								<td>安装范围：</td>
+								<td  id="infoSalePart"></td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<div class="title">INTEGO装贴信息</div>
+						<table>
+							<tr>
+								<td>装贴日期</td>
+								<td  id="infoSaleTime"></td>
+								<td>装贴门店</td>
+								<td id="infoStoreName"></td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<div class="title">INTEGO质保信息</div>
+						<table>
+							<tr>
+								<td>质保日期</td>
+								<td id="infoEXP"></td>
+								<td>车辆照片</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>质保范围：</td>
+								<td>INTEGO漆面保护膜，质保期限内因生产材料或工艺缺陷导致的开裂，起泡，翘边，分层等现象，INTEGO授权经销商将免费为您更换。   
+								INTEGO漆面膜日常养护须知：
+								+安装后72小时避免洗车。
+								+请勿用洗车高压水枪对着边角直接冲洗。
+								+避免硬物刮擦膜或含有腐蚀化学清洗剂擦洗膜表面。
+								+配合使用INTEGO漆面保护膜专用养护蜡，让商家或自行涂抹在保护膜上，每隔三月一次，可大大增加透明膜耐久性。
+								</td>
+								<td colspan="2"  id="infoCarPic"></td>
+							</tr>
+						</table>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="wid100" style="margin-top:100px;background:url(../img/footBg.png);height:184px;background-size: cover">
+		<div class="layout ft"></div>
+	</div>
+</body>
+</html>
+<script>
+	$(function(){
+		$('.headList li').hover(function(){
+			$(this) .children('.childList').stop(true, true).fadeIn(200);
+		},function(){
+			$(this) .children('.childList').fadeOut(500, function () {
+            	$(this).css("display", "none");
+        	});
+		})
+		$('.ft').load('../js/foot.js')
+		//质保查询 
+		var newMsg = [];
+		var carImg = '';//汽车图片字符串
+		$('#btn').click(function(){
+			$.get('https://d.carbros.cn:4433/GplusServer/Site/QueryWarrantyInfo',{query:$('#queryNum').val()},function(data){
+				if(data.Count == 0){
+					alert('输入的查询码错误或者不正确')
+					return false;
+				}else{
+					console.log(data)
+					newMsg = data.QueryWarrantyList[0];
+					var val=$('#queryNum').val();
+					$('.tip').css('display','none');
+					$('.result').css('display','block')
+					$('#infoCarBrand').text(newMsg.CarModel);$('#infoCarNumber').text(newMsg.CarNumber);
+					$('#infoVIN').text(newMsg.VIN);$('#infoCarColor').text(newMsg.CarColor);
+					$('#infoProductName').text(newMsg.ProductName);$('#infoProductNumber').text(newMsg.PN);
+					$('#infoGP').text(newMsg.GP+"年");$('#infoSalePart').text(newMsg.SalePart);
+					$('#infoSaleTime').text(newMsg.SaleTime.substring(0, newMsg.SaleTime.indexOf('T')));$('#infoStoreName').text(newMsg.StoreName);
+					var imgs = newMsg.Imgs.split(';');
+					// console.log(newMsg.Imgs.split(';'))
+					for(var i=0;i<4;i++){
+						carImg +="<img src="+imgs[i]+"  width='48%' height='50%'>"
+					} 
+					$('#infoCarPic').html(carImg);
+				}			
+			})
+		})
+	})
+</script>

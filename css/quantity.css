@@ -1,0 +1,25 @@
+.tip{padding-bottom:94px;}
+.tip ul li:nth-of-type(1){color:#868686;font-size: 20px}
+.tip ul li:nth-of-type(2){color: #393939;font-size: 25px;font-weight: bold;text-align: center;margin:88px 0px 46px;}
+.tip ul li:nth-of-type(3){width:774px;margin:0 auto 108px;border:1px solid #e7e7e7;height:52px;}
+.tip ul li:nth-of-type(3) input{width:586px;height:50px;line-height: 50px;padding-left:20px;}
+.tip ul li:nth-of-type(3) .query{background-color:#f5cd4e;color:#fff;width:186px;height:50px;font-size: 22px;line-height: 52px;text-align: center}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+    color:    #777;font-size:18px;
+}
+input::-moz-placeholder, textarea::-moz-placeholder { 
+    color:    #777;font-size:18px;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    color:    #777;font-size:18px;
+}
+.tipp{color:#868686;font-size: 20px;line-height: 35px}
+.result ul li{margin-bottom:50px;}
+.result ul li .title{font-size:16px;font-weight: bold;color:#fff;background-color: #000;height:50px;line-height: 50px;padding-left:18px;}
+.result ul li table{ border-collapse:collapse;}
+.result ul li table tr td{border: 2px solid #dcdcdc;height:48px;line-height: 48px;text-align:center;}
+.result ul li table tr td:nth-of-type(2n-1){width:179px;}
+.result ul li table tr td:nth-of-type(2n){width:420px;}
+.result .r1{color:#393939;font-size: 25px;font-weight:bold;}
+.result .r2{color:#868686;font-size: 20px;margin: 34px 0px 48px}
+#infoCarPic img{width:599px;height:386px;}

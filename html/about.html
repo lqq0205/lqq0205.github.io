@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于我们</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/about.css">
+	<link rel="shortcut icon" href="../picc.ico" type="image/x-icon">
+	<script src="../js/jquery-1.10.2.min.js"></script>	
+</head>
+<body>
+	<div class="wid100 aboutHead">
+		<div class="layout">
+			<div class="nav">
+				<a href="" class="logo"></a>
+				<ul class="headList">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="news.html">NEWS</a></li>
+					<li><a href="product.html">PRODUCT</a></li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">ABOUT US</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="about.html">ABOUT US</a>
+							<a href="contactUs.html">CONTACT US</a>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="ab clear">
+							<div class="fl">SERVICE</div>
+							<i class="fl icon"></i>
+						</a>
+						<div class="childList">
+							<a href="queryQuality.html">质保查询</a>
+							<a href="oper.html">经销商查询</a>
+						</div>							
+					</li>
+				</ul>	
+			</div>
+			<div class="bounceInDown animated n1 mr" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:0.5s;-webkit-animation-delay:0.5s;">ABOUT US</div>
+			<div class="line"></div>
+			<div class="bounceInLeft animated n2" style="visibility: visible;animation-duration:1s;-webkit-animation-duration:1s;animation-delay:1s;-webkit-animation-delay:1s;">PROTECT PAINTING BETTER</div>
+		</div>
+	</div>
+	<div class="wid100 center">
+		<div class="layout">
+			<h2>INTEGO TEAM</h2>
+			<div class="cenLine"></div>
+			<div class="team">
+				<ul class="fl">
+					<li>团队介绍/ Team Presentation</li>
+					<li>中国汽车电子技术展览会将汇聚业界影响力卓越的展商，包括车身电子展区、自动驾驶展区、智能网联技术展区、新能源汽车技术展区，中国汽车电子技术展览会将汇聚业界影响力卓越的展商，包括车身电子展区、自动驾驶展区、智能网联技术展区、新能源汽车技术展区</li>
+					<li>中国汽车电子技术展览会将汇聚业界影响力卓越的展商，包括车身电子展区、自动驾驶展区、智能网联技术展区、新能源汽车技术展区</li>
+				</ul>
+				<img src="../img/team.png" class="fl" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="wid100 history">
+		<div class="layout">
+			<div class="step">我们的步伐 / Brand history</div>
+			<div class="score"></div>
+			<ul>
+				<li>
+					<div>2016年在上海成立公司</div>
+					<div class="cir"></div>
+				</li>
+
+				<li>
+					<div class="cir"></div>
+					<div>2016年推出XXX产品，并且获得产品专利证书</div>
+				</li>
+				 <li>
+					<div>2016年，合作的机构数量增长至400余家</div>
+					<div class="cir"></div>				
+				</li>
+				<li>
+					<div class="cir"></div>
+					<div>2017年，我们在路上...</div>
+				</li> 
+			</ul>
+		</div>
+	</div>
+	<div class="wid100 adv">
+		<div class="layout">
+			<div class="ad">我们的优势 / Our Advantage</div>
+			<ul class="clear">
+				<li>
+					<dl>
+						<dt><img src="../img/about1.png" alt=""></dt>
+						<dd>价格优势</dd>
+						<dd></dd>
+						<dd style="text-align:left">三年镀晶省1万，普洗精洗省2万，时间省一半，三年省出2个月时间成本</dd>
+					</dl>
+				</li>
+
+				<li>
+					<dl>
+						<dt><img src="../img/about2.png" alt=""></dt>
+						<dd>品质优势</dd>
+						<dd></dd>
+						<dd>不发黄，不翘边，不掉胶</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt><img src="../img/about3.png" alt=""></dt>
+						<dd>施工优势</dd>
+						<dd></dd>
+						<dd>SeArt 十余年实战经验</dd>
+					</dl>			
+				</li>
+				<li>
+					<dl>
+						<dt><img src="../img/about4.png" alt=""></dt>
+						<dd>售后优势</dd>
+						<dd></dd>
+						<dd>厂家级质保3年</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="wid100" style="margin-top:100px;background:url(../img/footBg.png);height:184px;background-size: cover">
+		<div class="layout ft"></div>
+	</div>
+</body>
+</html>
+<script>
+	$(function(){
+		$('.headList li').hover(function(){
+			$(this) .children('.childList').stop(true, true).fadeIn(200);
+		},function(){
+			$(this) .children('.childList').fadeOut(500, function () {
+            	$(this).css("display", "none");
+        	});
+		})
+		$('.ft').load('../js/foot.js')
+	})
+</script>
