@@ -1,6 +1,3 @@
-$("#name").blur(function(){
-	// console.log(true)
-})
 $('.send').click(function(){
 	var email = $('#mail').val()
 	if($('#name').val() == ''){
@@ -17,11 +14,14 @@ $('.send').click(function(){
 		return;
 	}else{
 		$.ajax({
-			url:'',
 			type:'get',
-			data:{},
-			success:function(res){
-				console.log(res)
+			url:'https://d.carbros.cn:4433/Intego/Site/SendMail',
+			data:{Type:0,Contact:$('#name').val(),ContactNumber:'暂无',Email:$('#mail').val(),Message:$('#msg').val()},
+			success:function(data){
+				console.log(data)
+				if(data.code ==200){
+					alert('留言成功')
+				}
 			}
 		})
 	}
@@ -29,7 +29,7 @@ $('.send').click(function(){
 
 // 地图
 var map = new AMap.Map('container',{
-   zoom: 15,
+   zoom: 17,
    center: [121.525034,31.077803]
 });
 var marker = new AMap.Marker({
