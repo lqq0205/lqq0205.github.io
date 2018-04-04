@@ -1,7 +1,7 @@
 var country ='';
 $.ajax({ 
   type : "get", 
-  url : "https://d.carbros.cn:4433/Intego/Site/QueryPartnerCountry", //获取国家
+  url : "https://d.carbros.cn:4433/GplusServer/Site/QueryPartnerCountry", //获取国家
   async : false, 
   success : function(data){
   	if(data.length == 1){          		
@@ -32,7 +32,7 @@ function getPro(province){
 	var pro='';
 		$.ajax({ 
       type : "get", 
-      url : "https://d.carbros.cn:4433/Intego/Site/QueryPartnerProvince", //获取省份范围
+      url : "https://d.carbros.cn:4433/GplusServer/Site/QueryPartnerProvince", //获取省份范围
       async : false,
       data:{Country:province},
       success : function(data){ 
@@ -62,7 +62,7 @@ function getCity(tt,cou){
 	 var city='';
 	$.ajax({ 
       type : "get", 
-      url : "https://d.carbros.cn:4433/Intego/Site/QueryPartnerCity", //获取区域范围
+      url : "https://d.carbros.cn:4433/GplusServer/Site/QueryPartnerCity", //获取区域范围
       async : false,
       data:{Country:tt ,Province:cou} ,
       success : function(data){ 
@@ -79,7 +79,7 @@ function getArea(tt,cou,qiang){
 		var area='';
 	$.ajax({ 
       type : "get", 
-      url : "https://d.carbros.cn:4433/Intego/Site/QueryPartnerCounty", //获取区域范围
+      url : "https://d.carbros.cn:4433/GplusServer/Site/QueryPartnerCounty", //获取区域范围
       async : false,
       data:{Country:tt ,Province:cou,city:qiang} ,
       success : function(data){ 
@@ -97,7 +97,7 @@ function getArea(tt,cou,qiang){
 	function getOper(cou,pro,city,area){         //获取经销商集合
 		$.ajax({
 		type:'get',
-		url:"https://d.carbros.cn:4433/Intego/Site/QueryPartnerList",
+		url:"https://d.carbros.cn:4433/GplusServer/Site/QueryPartnerList",
 		async:false,
 		data:{Country:cou,Province:pro,City:city,County:area},
 		success:function(data){

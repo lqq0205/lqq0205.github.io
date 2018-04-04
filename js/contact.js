@@ -15,7 +15,7 @@ $('.send').click(function(){
 	}else{
 		$.ajax({
 			type:'get',
-			url:'https://d.carbros.cn:4433/Intego/Site/SendMail',
+			url:'https://d.carbros.cn:4433/GplusServer/Site/SendMail',
 			data:{Type:0,Contact:$('#name').val(),ContactNumber:'暂无',Email:$('#mail').val(),Message:$('#msg').val()},
 			success:function(data){
 				console.log(data)

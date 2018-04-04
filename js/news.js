@@ -7,7 +7,7 @@ function getNews(c,p){
 
 	$.ajax({
 		type:'get',
-		url:'https://d.carbros.cn:4433/Intego/Site/GetBrandNewsInfo',//获得新闻列表数据
+		url:'https://d.carbros.cn:4433/GplusServer/Site/GetBrandNewsInfo',//获得新闻列表数据
 		data:{Count:c,PageNumber:p},
 		async:true,
 		success:function(data){
