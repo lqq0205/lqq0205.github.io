@@ -34,7 +34,7 @@ p{line-height:22px;}
 .black{color:#000;}
 .mr{margin-left:413px}
 /*newsHead*/
-.newsHead{background:url(../img/newsBanner.png) no-repeat center center;height:700px;}
+.newsHead{background:url(../img/newsBanner.jpg) no-repeat center center;height:700px;}
 .n1{font-size:60px;font-weight:bold;margin:236px 0px 0px 480px;color:#fff; }
 .n2{margin-left:412px;font-size: 20px;color:#fff;}
 .line{margin-left:412px;width:356px;height:1px;background-color: #fff;margin-top:10px;margin-bottom:20px;}
@@ -47,7 +47,9 @@ p{line-height:22px;}
 /*contactHead*/
 .contactHead{background:url(../img/contactBanner.png) no-repeat center center;height:700px;}
 /*aboutHead*/
-.aboutHead{background:url(../img/contactBanner.png) no-repeat center center;height:700px;}
+.aboutHead{background:url(../img/contactBanner.jpg) no-repeat center center;height:700px;}
+/*operHeader*/
+.operHead{background:url(../img/quanlityBanner.jpg) no-repeat center center;height:700px;}
 /*quanlityHead*/
 .quanlityHead{background:url(../img/quanlityBanner.png) no-repeat center center;height:700px;}
 
