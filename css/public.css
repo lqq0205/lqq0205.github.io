@@ -45,13 +45,13 @@ p{line-height:22px;}
 /*productHead*/
 .proHead{background:url(../img/proBanner.png) no-repeat center center;height:700px;}
 /*contactHead*/
-.contactHead{background:url(../img/contactBanner.png) no-repeat center center;height:700px;}
+.contactHead{background:url(../img/contactBanner.jpg) no-repeat center center;height:700px;}
 /*aboutHead*/
 .aboutHead{background:url(../img/contactBanner.jpg) no-repeat center center;height:700px;}
 /*operHeader*/
 .operHead{background:url(../img/quanlityBanner.jpg) no-repeat center center;height:700px;}
 /*quanlityHead*/
-.quanlityHead{background:url(../img/quanlityBanner.png) no-repeat center center;height:700px;}
+.quanlityHead{background:url(../img/quanlityBanner.jpg) no-repeat center center;height:700px;}
 
 /*head*/
 .head{background:url(../img/headBanner.jpg) no-repeat center center;height:964px;}
